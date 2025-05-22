@@ -1,7 +1,9 @@
-// import { useState } from 'react'
 import Header from './components/Header'
 import TaskApp from './components/TaskApp'
-import './App.css'
+import './index.css'
+import './components/Header.css'
+import './components/UserInput.css'
+import './components/ListPanel.css'
 
 function App() {
 

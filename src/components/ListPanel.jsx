@@ -37,8 +37,10 @@ const ListPanel = ({ tasks, onDelete, onEdit }) => {
               ) : (
                 <>
                   {task.text}
+                <div>
                   <button onClick={() => onDelete(task.id)}>🗑</button>
                   <button onClick={() => startEditing(task)}>✏️</button>
+                </div>
                 </>
               )}
             </li>
