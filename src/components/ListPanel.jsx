@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../index.css'
+import './ListPanel.css'
 
 const ListPanel = ({ tasks, onDelete, onEdit, onToggleDone }) => {
   const [editingId, setEditingId] = useState(null);
