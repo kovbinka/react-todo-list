@@ -11,3 +11,8 @@ body {
   font-family: "Bebas Neue", sans-serif;
   font-size: larger;
 }
+
+.done {
+  text-decoration: line-through;
+  color: #999;
+}

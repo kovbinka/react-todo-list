@@ -10,10 +10,15 @@ const TaskApp = () => {
       const newTask = {
         id: Date.now(),
         text,
+        done: false
       };
       setTasks([...tasks, newTask]);
     }
   };
+
+  const toggleDone = (id) => {
+    setTasks(tasks.map(task => task.id === id ? {... task, done: !task.done} : task));
+  }
 
   const deleteTask = (id) => {
     setTasks(tasks.filter(task => task.id !== id));
@@ -28,7 +33,7 @@ const TaskApp = () => {
   return (
     <div>
       <UserInput onAddTask={addTask} />
-      <ListPanel tasks={tasks} onDelete={deleteTask} onEdit={editTask} />
+      <ListPanel tasks={tasks} onDelete={deleteTask} onEdit={editTask} onToggleDone={toggleDone} />
     </div>
   );
 };

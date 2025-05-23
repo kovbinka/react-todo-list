@@ -3,7 +3,7 @@ ul {
     padding: 0;
   }
   
-  li {
+li {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     background: #355677;
@@ -14,17 +14,24 @@ ul {
     color: rgb(179, 255, 0);
   }
   
-  li form {
+li form {
     flex: 1;
     display: flex;
     gap: 0.5rem;
   }
   
-  li input[type="text"] {
+li input[type="text"] {
     flex: 1;
   }
   
-  li button {
+li button {
     margin-left: 0.3rem;
   }
+
+.done {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+
   
